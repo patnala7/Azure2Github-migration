@@ -1,0 +1,45 @@
+[2025-03-29 22:01:49] [DEBUG] HTTP GET: https://www.githubstatus.com/api/v2/incidents/unresolved.json
+[2025-03-29 22:01:50] [DEBUG] RESPONSE (OK): {"page":{"id":"kctbh9vrtdwd","name":"GitHub","url":"https://www.githubstatus.com","time_zone":"Etc/UTC","updated_at":"2025-03-29T23:14:45.232Z"},"incidents":[]}
+[2025-03-29 22:01:50] [DEBUG] HTTP GET: https://raw.githubusercontent.com/github/gh-gei/main/LATEST-VERSION.txt
+[2025-03-29 22:01:50] [DEBUG] RESPONSE (OK): v1.12.0
+
+[2025-03-29 22:01:50] [INFO] You are running an up-to-date version of the ado2gh CLI [v1.12.0]
+[2025-03-29 22:01:50] [INFO] GITHUB ORG: RocketResume-ai
+[2025-03-29 22:01:50] [INFO] ACTOR: prashanth
+[2025-03-29 22:01:50] [INFO] ACTOR TYPE: USER
+[2025-03-29 22:01:50] [INFO] Actor type is valid...
+[2025-03-29 22:01:50] [INFO] Granting migrator role ...
+[2025-03-29 22:01:51] [DEBUG] HTTP POST: https://api.github.com/graphql
+[2025-03-29 22:01:51] [DEBUG] HTTP BODY: {"query":"query($login: String!) {organization(login: $login) { login, id, name } }","variables":{"login":"RocketResume-ai"}}
+[2025-03-29 22:01:51] [DEBUG] GITHUB REQUEST ID: DE6A:2CF0E:143A1D8:287E722:67E8A60F
+[2025-03-29 22:01:51] [DEBUG] RESPONSE (OK): {"data":{"organization":{"login":"RocketResume-ai","id":"O_kgDOB-5JvQ","name":"RocketResume-ai"}}}
+[2025-03-29 22:01:51] [DEBUG] HTTP POST: https://api.github.com/graphql
+[2025-03-29 22:01:51] [DEBUG] HTTP BODY: {"query":"mutation grantMigratorRole ( $organizationId: ID!, $actor: String!, $actor_type: ActorType! ) { grantMigratorRole( input: {organizationId: $organizationId, actor: $actor, actorType: $actor_type }) { success } }","variables":{"organizationId":"O_kgDOB-5JvQ","actor":"prashanth","actor_type":"USER"},"operationName":"grantMigratorRole"}
+[2025-03-29 22:01:51] [DEBUG] GITHUB REQUEST ID: DE6A:2CF0E:143A24B:287E7F7:67E8A60F
+[2025-03-29 22:01:51] [DEBUG] RESPONSE (OK): {"data":{"grantMigratorRole":null},"errors":[{"type":"FORBIDDEN","path":["grantMigratorRole"],"locations":[{"line":1,"column":97}],"message":"prashanth is not a member of RocketResume-ai organization."}]}
+[2025-03-29 22:01:51] [ERROR] OctoshiftCLI.OctoshiftCliException: prashanth is not a member of RocketResume-ai organization.
+   at OctoshiftCLI.Services.GithubClient.EnsureSuccessGraphQLResponse(JObject response)
+   at OctoshiftCLI.Services.GithubClient.PostGraphQLAsync(String url, Object body, Dictionary`2 customHeaders)
+   at OctoshiftCLI.Services.GithubApi.GrantMigratorRole(String org, String actor, String actorType)
+   at OctoshiftCLI.Commands.GrantMigratorRole.GrantMigratorRoleCommandHandler.Handle(GrantMigratorRoleCommandArgs args)
+   at OctoshiftCLI.Extensions.CommandExtensions.RunHandler[TArgs,THandler](TArgs args, ServiceProvider sp, CommandBase`2 command)
+   at OctoshiftCLI.Extensions.CommandExtensions.<>c__DisplayClass1_0`3.<<ConfigureCommand>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at System.CommandLine.Invocation.AnonymousCommandHandler.InvokeAsync(InvocationContext)
+   at System.CommandLine.Invocation.InvocationPipeline.<>c__DisplayClass4_0.<<BuildInvocationChain>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at System.CommandLine.Builder.CommandLineBuilderExtensions.<>c__DisplayClass17_0.<<UseParseErrorReporting>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at System.CommandLine.Builder.CommandLineBuilderExtensions.<>c__DisplayClass12_0.<<UseHelp>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at System.CommandLine.Builder.CommandLineBuilderExtensions.<>c__DisplayClass22_0.<<UseVersionOption>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at System.CommandLine.Builder.CommandLineBuilderExtensions.<>c__DisplayClass19_0.<<UseTypoCorrections>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at System.CommandLine.Builder.CommandLineBuilderExtensions.<>c.<<UseSuggestDirective>b__18_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at System.CommandLine.Builder.CommandLineBuilderExtensions.<>c__DisplayClass16_0.<<UseParseDirective>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at System.CommandLine.Builder.CommandLineBuilderExtensions.<>c.<<RegisterWithDotnetSuggest>b__5_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at System.CommandLine.Builder.CommandLineBuilderExtensions.<>c__DisplayClass8_0.<<UseExceptionHandler>b__0>d.MoveNext()

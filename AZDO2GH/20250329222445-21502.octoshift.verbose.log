@@ -1,0 +1,18 @@
+[2025-03-29 22:24:45] [DEBUG] HTTP GET: https://www.githubstatus.com/api/v2/incidents/unresolved.json
+[2025-03-29 22:24:46] [DEBUG] RESPONSE (OK): {"page":{"id":"kctbh9vrtdwd","name":"GitHub","url":"https://www.githubstatus.com","time_zone":"Etc/UTC","updated_at":"2025-03-29T23:14:45.232Z"},"incidents":[]}
+[2025-03-29 22:24:46] [DEBUG] HTTP GET: https://raw.githubusercontent.com/github/gh-gei/main/LATEST-VERSION.txt
+[2025-03-29 22:24:47] [DEBUG] RESPONSE (OK): v1.12.0
+
+[2025-03-29 22:24:47] [INFO] You are running an up-to-date version of the ado2gh CLI [v1.12.0]
+[2025-03-29 22:24:47] [INFO] GITHUB ORG: RocketResume-ai
+[2025-03-29 22:24:47] [INFO] GITHUB REPO: satish_test
+[2025-03-29 22:24:47] [WARNING] Migration logs are only available for 24 hours after a migration finishes!
+[2025-03-29 22:24:47] [INFO] Downloading migration logs...
+[2025-03-29 22:24:47] [DEBUG] HTTP POST: https://api.github.com/graphql
+[2025-03-29 22:24:47] [DEBUG] HTTP BODY: {"query":"query ($org: String!, $repo: String!) { \n                organization(login: $org) {\n                    repositoryMigrations(last: 1, repositoryName: $repo) {\n                        nodes {\n                            id\n                            migrationLogUrl\n                        }\n                    }\n                }\n             }","variables":{"org":"RocketResume-ai","repo":"satish_test"}}
+[2025-03-29 22:24:47] [DEBUG] GITHUB REQUEST ID: E01A:3E1CCF:F426EE6:1E8B6818:67E8AB6F
+[2025-03-29 22:24:47] [DEBUG] RESPONSE (OK): {"data":{"organization":{"repositoryMigrations":{"nodes":[{"id":"RM_kgDaACQzYWI2ZDgwNy0xYjg2LTQxN2ItOTg5Yy1mNmM0MzAxYzQ4ZDE","migrationLogUrl":"https://objects-origin.githubusercontent.com/octoshiftmigrationlogs/RocketResume-ai/satish_test-3ab6d807-1b86-417b-989c-f6c4301c48d1-logs.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=***%2F20250330%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250330T022329Z&X-Amz-Expires=432000&X-Amz-Signature=a89d37ca030de473ea0492c9684ec3bb9ccccd8a523a4a73ff1e3958b9af7fbf&X-Amz-SignedHeaders=host"}]}}}}
+[2025-03-29 22:24:47] [INFO] Downloading log for repository satish_test to migration-log-RocketResume-ai-satish_test-RM_kgDaACQzYWI2ZDgwNy0xYjg2LTQxN2ItOTg5Yy1mNmM0MzAxYzQ4ZDE.log...
+[2025-03-29 22:24:47] [DEBUG] HTTP GET: https://objects-origin.githubusercontent.com/octoshiftmigrationlogs/RocketResume-ai/satish_test-3ab6d807-1b86-417b-989c-f6c4301c48d1-logs.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=***%2F20250330%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250330T022329Z&X-Amz-Expires=432000&X-Amz-Signature=a89d37ca030de473ea0492c9684ec3bb9ccccd8a523a4a73ff1e3958b9af7fbf&X-Amz-SignedHeaders=host
+[2025-03-29 22:24:48] [DEBUG] RESPONSE (OK): <truncated>
+[2025-03-29 22:24:48] [INFO] Downloaded satish_test log to migration-log-RocketResume-ai-satish_test-RM_kgDaACQzYWI2ZDgwNy0xYjg2LTQxN2ItOTg5Yy1mNmM0MzAxYzQ4ZDE.log.

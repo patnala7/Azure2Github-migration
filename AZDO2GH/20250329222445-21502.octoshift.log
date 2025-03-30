@@ -1,0 +1,7 @@
+[2025-03-29 22:24:47] [INFO] You are running an up-to-date version of the ado2gh CLI [v1.12.0]
+[2025-03-29 22:24:47] [INFO] GITHUB ORG: RocketResume-ai
+[2025-03-29 22:24:47] [INFO] GITHUB REPO: satish_test
+[2025-03-29 22:24:47] [WARNING] Migration logs are only available for 24 hours after a migration finishes!
+[2025-03-29 22:24:47] [INFO] Downloading migration logs...
+[2025-03-29 22:24:47] [INFO] Downloading log for repository satish_test to migration-log-RocketResume-ai-satish_test-RM_kgDaACQzYWI2ZDgwNy0xYjg2LTQxN2ItOTg5Yy1mNmM0MzAxYzQ4ZDE.log...
+[2025-03-29 22:24:48] [INFO] Downloaded satish_test log to migration-log-RocketResume-ai-satish_test-RM_kgDaACQzYWI2ZDgwNy0xYjg2LTQxN2ItOTg5Yy1mNmM0MzAxYzQ4ZDE.log.
