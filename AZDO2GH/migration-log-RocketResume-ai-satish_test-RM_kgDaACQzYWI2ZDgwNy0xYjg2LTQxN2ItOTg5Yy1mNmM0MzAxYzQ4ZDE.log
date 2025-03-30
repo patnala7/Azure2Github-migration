@@ -1,0 +1,17 @@
+[2025-03-30T02:20:27Z] INFO -- Migration started by patnala7 from https://dev.azure.com/prashanthkool7/satish_test/_git/satish_test to RocketResume-ai/satish_test
+[2025-03-30T02:20:27Z] INFO -- Migration ID: 3ab6d807-1b86-417b-989c-f6c4301c48d1
+[2025-03-30T02:20:27Z] INFO -- -----------------------------
+[2025-03-30T02:20:29Z] INFO -- Git source migration started
+[2025-03-30T02:22:39Z] INFO -- Git source migration completed
+[2025-03-30T02:22:39Z] INFO -- -----------------------------
+[2025-03-30T02:22:39Z] INFO -- Extraction started
+[2025-03-30T02:22:48Z] INFO -- Extraction complete
+[2025-03-30T02:22:48Z] INFO -- -----------------------------
+[2025-03-30T02:22:50Z] INFO -- Transformation started
+[2025-03-30T02:23:04Z] INFO -- Transformation complete
+[2025-03-30T02:23:04Z] INFO -- -----------------------------
+[2025-03-30T02:23:06Z] INFO -- Import started
+[2025-03-30T02:23:26Z] INFO -- Import complete
+[2025-03-30T02:23:26Z] INFO -- -----------------------------
+[2025-03-30T02:23:26Z] INFO -- Migration complete
+[2025-03-30T02:23:26Z] INFO -- -----------------------------

@@ -1,0 +1,7 @@
+[2025-03-29 22:02:14] [INFO] You are running an up-to-date version of the ado2gh CLI [v1.12.0]
+[2025-03-29 22:02:15] [INFO] GITHUB ORG: RocketResume-ai
+[2025-03-29 22:02:15] [INFO] ACTOR: patnala7
+[2025-03-29 22:02:15] [INFO] ACTOR TYPE: USER
+[2025-03-29 22:02:15] [INFO] Actor type is valid...
+[2025-03-29 22:02:15] [INFO] Granting migrator role ...
+[2025-03-29 22:02:15] [INFO] Migrator role successfully set for the USER "patnala7"

@@ -1,0 +1,20 @@
+[2025-03-29 22:02:13] [DEBUG] HTTP GET: https://www.githubstatus.com/api/v2/incidents/unresolved.json
+[2025-03-29 22:02:14] [DEBUG] RESPONSE (OK): {"page":{"id":"kctbh9vrtdwd","name":"GitHub","url":"https://www.githubstatus.com","time_zone":"Etc/UTC","updated_at":"2025-03-29T23:14:45.232Z"},"incidents":[]}
+[2025-03-29 22:02:14] [DEBUG] HTTP GET: https://raw.githubusercontent.com/github/gh-gei/main/LATEST-VERSION.txt
+[2025-03-29 22:02:14] [DEBUG] RESPONSE (OK): v1.12.0
+
+[2025-03-29 22:02:14] [INFO] You are running an up-to-date version of the ado2gh CLI [v1.12.0]
+[2025-03-29 22:02:15] [INFO] GITHUB ORG: RocketResume-ai
+[2025-03-29 22:02:15] [INFO] ACTOR: patnala7
+[2025-03-29 22:02:15] [INFO] ACTOR TYPE: USER
+[2025-03-29 22:02:15] [INFO] Actor type is valid...
+[2025-03-29 22:02:15] [INFO] Granting migrator role ...
+[2025-03-29 22:02:15] [DEBUG] HTTP POST: https://api.github.com/graphql
+[2025-03-29 22:02:15] [DEBUG] HTTP BODY: {"query":"query($login: String!) {organization(login: $login) { login, id, name } }","variables":{"login":"RocketResume-ai"}}
+[2025-03-29 22:02:15] [DEBUG] GITHUB REQUEST ID: DE78:E60F3:14BEE06:296FFAF:67E8A627
+[2025-03-29 22:02:15] [DEBUG] RESPONSE (OK): {"data":{"organization":{"login":"RocketResume-ai","id":"O_kgDOB-5JvQ","name":"RocketResume-ai"}}}
+[2025-03-29 22:02:15] [DEBUG] HTTP POST: https://api.github.com/graphql
+[2025-03-29 22:02:15] [DEBUG] HTTP BODY: {"query":"mutation grantMigratorRole ( $organizationId: ID!, $actor: String!, $actor_type: ActorType! ) { grantMigratorRole( input: {organizationId: $organizationId, actor: $actor, actorType: $actor_type }) { success } }","variables":{"organizationId":"O_kgDOB-5JvQ","actor":"patnala7","actor_type":"USER"},"operationName":"grantMigratorRole"}
+[2025-03-29 22:02:15] [DEBUG] GITHUB REQUEST ID: DE78:E60F3:14BEE9A:29700DD:67E8A627
+[2025-03-29 22:02:15] [DEBUG] RESPONSE (OK): {"data":{"grantMigratorRole":{"success":true}}}
+[2025-03-29 22:02:15] [INFO] Migrator role successfully set for the USER "patnala7"

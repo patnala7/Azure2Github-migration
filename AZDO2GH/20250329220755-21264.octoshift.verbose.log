@@ -1,0 +1,21 @@
+[2025-03-29 22:07:55] [DEBUG] HTTP GET: https://www.githubstatus.com/api/v2/incidents/unresolved.json
+[2025-03-29 22:07:56] [DEBUG] RESPONSE (OK): {"page":{"id":"kctbh9vrtdwd","name":"GitHub","url":"https://www.githubstatus.com","time_zone":"Etc/UTC","updated_at":"2025-03-29T23:14:45.232Z"},"incidents":[]}
+[2025-03-29 22:07:56] [DEBUG] HTTP GET: https://raw.githubusercontent.com/github/gh-gei/main/LATEST-VERSION.txt
+[2025-03-29 22:07:56] [DEBUG] RESPONSE (OK): v1.12.0
+
+[2025-03-29 22:07:56] [INFO] You are running an up-to-date version of the ado2gh CLI [v1.12.0]
+[2025-03-29 22:07:56] [INFO] GITHUB ORG: RocketResume-ai
+[2025-03-29 22:07:56] [INFO] ADO ORG: prashanthkool7
+[2025-03-29 22:07:56] [INFO] OUTPUT: repo_list
+[2025-03-29 22:07:56] [INFO] Generating Script...
+[2025-03-29 22:07:56] [DEBUG] HTTP GET: https://dev.azure.com/prashanthkool7/_apis/projects?api-version=6.1-preview
+[2025-03-29 22:07:57] [DEBUG] RESPONSE (OK): {"count":2,"value":[{"id":"14c3a5cc-da41-464a-9ad9-8919eab118f7","name":"Prashanth_Test","url":"https://dev.azure.com/prashanthkool7/_apis/projects/14c3a5cc-da41-464a-9ad9-8919eab118f7","state":"wellFormed","revision":19,"visibility":"private","lastUpdateTime":"2025-03-30T01:22:51.127Z"},{"id":"e5e4101f-3ae0-4ed6-bba6-54bb0c3ed87a","name":"satish_test","url":"https://dev.azure.com/prashanthkool7/_apis/projects/e5e4101f-3ae0-4ed6-bba6-54bb0c3ed87a","state":"wellFormed","revision":11,"visibility":"private","lastUpdateTime":"2024-03-14T02:19:29.203Z"}]}
+[2025-03-29 22:07:57] [DEBUG] HTTP GET: https://dev.azure.com/prashanthkool7/Prashanth_Test/_apis/git/repositories?api-version=6.1-preview.1
+[2025-03-29 22:07:57] [DEBUG] RESPONSE (OK): {"value":[{"id":"a769cdd9-1b78-44f8-822d-d4950c269ca4","name":"Prashanth_Test","url":"https://dev.azure.com/prashanthkool7/14c3a5cc-da41-464a-9ad9-8919eab118f7/_apis/git/repositories/a769cdd9-1b78-44f8-822d-d4950c269ca4","project":{"id":"14c3a5cc-da41-464a-9ad9-8919eab118f7","name":"Prashanth_Test","url":"https://dev.azure.com/prashanthkool7/_apis/projects/14c3a5cc-da41-464a-9ad9-8919eab118f7","state":"wellFormed","revision":19,"visibility":"private","lastUpdateTime":"2025-03-30T01:22:51.127Z"},"defaultBranch":"refs/heads/main","size":723,"remoteUrl":"https://prashanthkool7@dev.azure.com/prashanthkool7/Prashanth_Test/_git/Prashanth_Test","sshUrl":"git@ssh.dev.azure.com:v3/prashanthkool7/Prashanth_Test/Prashanth_Test","webUrl":"https://dev.azure.com/prashanthkool7/Prashanth_Test/_git/Prashanth_Test","isDisabled":false,"isInMaintenance":false}],"count":1}
+[2025-03-29 22:07:57] [DEBUG] HTTP GET: https://dev.azure.com/prashanthkool7/satish_test/_apis/git/repositories?api-version=6.1-preview.1
+[2025-03-29 22:07:58] [DEBUG] RESPONSE (OK): {"value":[{"id":"f90c08cd-a4b7-4f5d-9072-ff638886174d","name":"satish_test","url":"https://dev.azure.com/prashanthkool7/e5e4101f-3ae0-4ed6-bba6-54bb0c3ed87a/_apis/git/repositories/f90c08cd-a4b7-4f5d-9072-ff638886174d","project":{"id":"e5e4101f-3ae0-4ed6-bba6-54bb0c3ed87a","name":"satish_test","url":"https://dev.azure.com/prashanthkool7/_apis/projects/e5e4101f-3ae0-4ed6-bba6-54bb0c3ed87a","state":"wellFormed","revision":11,"visibility":"private","lastUpdateTime":"2024-03-14T02:19:29.203Z"},"defaultBranch":"refs/heads/master","size":936,"remoteUrl":"https://prashanthkool7@dev.azure.com/prashanthkool7/satish_test/_git/satish_test","sshUrl":"git@ssh.dev.azure.com:v3/prashanthkool7/satish_test/satish_test","webUrl":"https://dev.azure.com/prashanthkool7/satish_test/_git/satish_test","isDisabled":false,"isInMaintenance":false}],"count":1}
+[2025-03-29 22:07:58] [INFO] ADO Org: prashanthkool7
+[2025-03-29 22:07:58] [INFO]   Team Project: Prashanth_Test
+[2025-03-29 22:07:58] [INFO]     Repo: Prashanth_Test
+[2025-03-29 22:07:58] [INFO]   Team Project: satish_test
+[2025-03-29 22:07:58] [INFO]     Repo: satish_test
