@@ -1,0 +1,487 @@
+ghp_tGG680
+
+Github PAT token
+
+Repo
+workflow
+Admin:org 
+
+
+=================================================
+ 
+
+ AzureDevOps PAT token
+
+ while creating PAT token for the Azure Devops make sure to have these preveliages 
+
+ 30 days customer 
+
+ R Work items 
+ R Source code 
+ R for identity
+
+
+ migration 2
+
+ 6MvcRoZqZZshszr3uAPqRe7
+
+
+
+ prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % gh extension list
+To get started with GitHub CLI, please run:  gh auth login
+Alternatively, populate the GH_TOKEN environment variable with a GitHub API authentication token.
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % gh auth login
+? Where do you use GitHub? GitHub.com
+? What is your preferred protocol for Git operations on this host? HTTPS
+? Authenticate Git with your GitHub credentials? Yes
+? How would you like to authenticate GitHub CLI? Login with a web browser
+
+! First copy your one-time code: C44C-19BB
+Press Enter to open https://github.com/login/device in your browser...
+✓ Authentication complete.
+- gh config set -h github.com git_protocol https
+✓ Configured git protocol
+✓ Logged in as patnala7
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % gh extension list
+no installed extensions found
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % gh extension install github/gh-ad02gh
+X Could not find extension 'github/gh-ad02gh' on host github.com
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % gh extension install github/gh-ad02gh
+X Could not find extension 'github/gh-ad02gh' on host github.com
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % gh extension install gh-ad02gh
+expected the "[HOST/]OWNER/REPO" format, got "gh-ad02gh"
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % gh extension install github/gh-ad02gh
+X Could not find extension 'github/gh-ad02gh' on host github.com
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % gh extension install github/gh-ado2gh
+⢿gh-ado2gh not available for darwin-arm64. Falling back to compatible darwin-amd64 binary
+✓ Installed extension github/gh-ado2gh
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % $env: GH_PAT="*********************"
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % $env: ADOPAT="***********************
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % $env: ADOPAT="***********************"
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % gh ado2gh grant-migrator-role --github-org patnala7 --actor prashanth
+ patnala --actor-type USER
+[2025-03-29 21:56:02] [INFO] You are running an up-to-date version of the ado2gh CLI [v1.12.0]
+Unrecognized command or argument 'patnala'.
+
+Description:
+  Allows an organization admin to grant a USER or TEAM the migrator role for a single GitHub organization. The
+  migrator role allows the role assignee to perform migrations into the target organization.
+
+Usage:
+  gh-ado2gh grant-migrator-role [options]
+
+Options:
+  --github-org <github-org> (REQUIRED)
+  --actor <actor> (REQUIRED)
+  --actor-type <actor-type> (REQUIRED)
+  --github-pat <github-pat>             Personal access token of the GitHub target. Overrides GH_PAT environment
+                                        variable.
+  --verbose
+  --ghes-api-url <ghes-api-url>         The URL of the GitHub Enterprise Server instance, if migrating from GHES.
+                                        Supports granting access for exports. Can only configure one of --ghes-api-url
+                                        or --target-api-url at a time.
+  --target-api-url <target-api-url>     The URL of the target API, if not migrating to github.com. Defaults to
+                                        https://api.github.com. Can only configure one of --ghes-api-url or
+                                        --target-api-url at a time.
+  -?, -h, --help                        Show help and usage information
+
+
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % gh ado2gh grant-migrator-role --github-org patnala7 --actor prashanth --actor-type USER
+[2025-03-29 21:56:42] [INFO] You are running an up-to-date version of the ado2gh CLI [v1.12.0]
+[2025-03-29 21:56:42] [INFO] GITHUB ORG: patnala7
+[2025-03-29 21:56:42] [INFO] ACTOR: prashanth
+[2025-03-29 21:56:42] [INFO] ACTOR TYPE: USER
+[2025-03-29 21:56:42] [INFO] Actor type is valid...
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % $env: GH_PAT=""
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % export GH_PAT=**************
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % gh ado2gh grant-migrator-role --github-org patnala7 --actor prashanth --actor-type USER
+[2025-03-29 21:59:59] [INFO] You are running an up-to-date version of the ado2gh CLI [v1.12.0]
+[2025-03-29 21:59:59] [INFO] GITHUB ORG: patnala7
+[2025-03-29 21:59:59] [INFO] ACTOR: prashanth
+[2025-03-29 21:59:59] [INFO] ACTOR TYPE: USER
+[2025-03-29 21:59:59] [INFO] Actor type is valid...
+[2025-03-29 21:59:59] [INFO] Granting migrator role ...
+[2025-03-29 22:01:02] [ERROR] Failed to lookup the Organization ID for organization 'patnala7'
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % gh ado2gh grant-migrator-role --github-org RocketResume-ai --actor prashanth --actor-type USER
+[2025-03-29 22:01:50] [INFO] You are running an up-to-date version of the ado2gh CLI [v1.12.0]
+[2025-03-29 22:01:50] [INFO] GITHUB ORG: RocketResume-ai
+[2025-03-29 22:01:50] [INFO] ACTOR: prashanth
+[2025-03-29 22:01:50] [INFO] ACTOR TYPE: USER
+[2025-03-29 22:01:50] [INFO] Actor type is valid...
+[2025-03-29 22:01:50] [INFO] Granting migrator role ...
+[2025-03-29 22:01:51] [ERROR] prashanth is not a member of RocketResume-ai organization.
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % gh ado2gh grant-migrator-role --github-org RocketResume-ai --actor patnala7 --actor-type USER
+[2025-03-29 22:02:14] [INFO] You are running an up-to-date version of the ado2gh CLI [v1.12.0]
+[2025-03-29 22:02:15] [INFO] GITHUB ORG: RocketResume-ai
+[2025-03-29 22:02:15] [INFO] ACTOR: patnala7
+[2025-03-29 22:02:15] [INFO] ACTOR TYPE: USER
+[2025-03-29 22:02:15] [INFO] Actor type is valid...
+[2025-03-29 22:02:15] [INFO] Granting migrator role ...
+[2025-03-29 22:02:15] [INFO] Migrator role successfully set for the USER "patnala7"
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % export ADO_PAT=**********
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % ls
+20250329215600-21014.octoshift.log		20250329215958-21085.octoshift.verbose.log
+20250329215600-21014.octoshift.verbose.log	20250329220149-21116.octoshift.log
+20250329215640-21025.octoshift.log		20250329220149-21116.octoshift.verbose.log
+20250329215640-21025.octoshift.verbose.log	20250329220213-21124.octoshift.log
+20250329215958-21085.octoshift.log		20250329220213-21124.octoshift.verbose.log
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % pwd
+/Users/prashanthpatnala/AZDO2GH
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % ls
+20250329215600-21014.octoshift.log		20250329215958-21085.octoshift.verbose.log
+20250329215600-21014.octoshift.verbose.log	20250329220149-21116.octoshift.log
+20250329215640-21025.octoshift.log		20250329220149-21116.octoshift.verbose.log
+20250329215640-21025.octoshift.verbose.log	20250329220213-21124.octoshift.log
+20250329215958-21085.octoshift.log		20250329220213-21124.octoshift.verbose.log
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % gh ado2gh generate-script --ado-org prashanthkool7 --github-org RocketResume-ai --output repo_list
+[2025-03-29 22:07:56] [INFO] You are running an up-to-date version of the ado2gh CLI [v1.12.0]
+[2025-03-29 22:07:56] [INFO] GITHUB ORG: RocketResume-ai
+[2025-03-29 22:07:56] [INFO] ADO ORG: prashanthkool7
+[2025-03-29 22:07:56] [INFO] OUTPUT: repo_list
+[2025-03-29 22:07:56] [INFO] Generating Script...
+[2025-03-29 22:07:58] [INFO] ADO Org: prashanthkool7
+[2025-03-29 22:07:58] [INFO]   Team Project: Prashanth_Test
+[2025-03-29 22:07:58] [INFO]     Repo: Prashanth_Test
+[2025-03-29 22:07:58] [INFO]   Team Project: satish_test
+[2025-03-29 22:07:58] [INFO]     Repo: satish_test
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % notepad repo_list
+zsh: command not found: notepad
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % gh ado2gh generate-script --ado-org prashanthkool7 --github-org RocketResume-ai --output repo_list.ps1
+[2025-03-29 22:09:41] [INFO] You are running an up-to-date version of the ado2gh CLI [v1.12.0]
+[2025-03-29 22:09:41] [INFO] GITHUB ORG: RocketResume-ai
+[2025-03-29 22:09:41] [INFO] ADO ORG: prashanthkool7
+[2025-03-29 22:09:41] [INFO] OUTPUT: repo_list.ps1
+[2025-03-29 22:09:41] [INFO] Generating Script...
+[2025-03-29 22:09:42] [INFO] ADO Org: prashanthkool7
+[2025-03-29 22:09:42] [INFO]   Team Project: Prashanth_Test
+[2025-03-29 22:09:42] [INFO]     Repo: Prashanth_Test
+[2025-03-29 22:09:42] [INFO]   Team Project: satish_test
+[2025-03-29 22:09:42] [INFO]     Repo: satish_test
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % ls
+20250329215600-21014.octoshift.log		20250329220213-21124.octoshift.log
+20250329215600-21014.octoshift.verbose.log	20250329220213-21124.octoshift.verbose.log
+20250329215640-21025.octoshift.log		20250329220755-21264.octoshift.log
+20250329215640-21025.octoshift.verbose.log	20250329220755-21264.octoshift.verbose.log
+20250329215958-21085.octoshift.log		20250329220939-21304.octoshift.log
+20250329215958-21085.octoshift.verbose.log	20250329220939-21304.octoshift.verbose.log
+20250329220149-21116.octoshift.log		repo_list
+20250329220149-21116.octoshift.verbose.log	repo_list.ps1
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % cat repo_list
+#!/usr/bin/env pwsh
+
+# =========== Created with CLI version 1.12.0 ===========
+
+function Exec {
+    param (
+        [scriptblock]$ScriptBlock
+    )
+    & @ScriptBlock
+    if ($lastexitcode -ne 0) {
+        exit $lastexitcode
+    }
+}
+
+function ExecAndGetMigrationID {
+    param (
+        [scriptblock]$ScriptBlock
+    )
+    $MigrationID = & @ScriptBlock | ForEach-Object {
+        Write-Host $_
+        $_
+    } | Select-String -Pattern "\(ID: (.+)\)" | ForEach-Object { $_.matches.groups[1] }
+    return $MigrationID
+}
+
+function ExecBatch {
+    param (
+        [scriptblock[]]$ScriptBlocks
+    )
+    $Global:LastBatchFailures = 0
+    foreach ($ScriptBlock in $ScriptBlocks)
+    {
+        & @ScriptBlock
+        if ($lastexitcode -ne 0) {
+            $Global:LastBatchFailures++
+        }
+    }
+}
+
+if (-not $env:ADO_PAT) {
+    Write-Error "ADO_PAT environment variable must be set to a valid Azure DevOps Personal Access Token with the appropriate scopes. For more information see https://docs.github.com/en/migrations/using-github-enterprise-importer/preparing-to-migrate-with-github-enterprise-importer/managing-access-for-github-enterprise-importer#personal-access-tokens-for-azure-devops"
+    exit 1
+} else {
+    Write-Host "ADO_PAT environment variable is set and will be used to authenticate to Azure DevOps."
+}
+
+if (-not $env:GH_PAT) {
+    Write-Error "GH_PAT environment variable must be set to a valid GitHub Personal Access Token with the appropriate scopes. For more information see https://docs.github.com/en/migrations/using-github-enterprise-importer/preparing-to-migrate-with-github-enterprise-importer/managing-access-for-github-enterprise-importer#creating-a-personal-access-token-for-github-enterprise-importer"
+    exit 1
+} else {
+    Write-Host "GH_PAT environment variable is set and will be used to authenticate to GitHub."
+}
+
+$Succeeded = 0
+$Failed = 0
+$RepoMigrations = [ordered]@{}
+
+# =========== Queueing migration for Organization: prashanthkool7 ===========
+
+# === Queueing repo migrations for Team Project: prashanthkool7/Prashanth_Test ===
+
+$MigrationID = ExecAndGetMigrationID { gh ado2gh migrate-repo --ado-org "prashanthkool7" --ado-team-project "Prashanth_Test" --ado-repo "Prashanth_Test" --github-org "RocketResume-ai" --github-repo "Prashanth_Test-Prashanth_Test" --queue-only --target-repo-visibility private }
+$RepoMigrations["prashanthkool7/Prashanth_Test-Prashanth_Test"] = $MigrationID
+
+# === Queueing repo migrations for Team Project: prashanthkool7/satish_test ===
+
+$MigrationID = ExecAndGetMigrationID { gh ado2gh migrate-repo --ado-org "prashanthkool7" --ado-team-project "satish_test" --ado-repo "satish_test" --github-org "RocketResume-ai" --github-repo "satish_test-satish_test" --queue-only --target-repo-visibility private }
+$RepoMigrations["prashanthkool7/satish_test-satish_test"] = $MigrationID
+
+# =========== Waiting for all migrations to finish for Organization: prashanthkool7 ===========
+
+# === Waiting for repo migration to finish for Team Project: Prashanth_Test and Repo: Prashanth_Test. Will then complete the below post migration steps. ===
+$CanExecuteBatch = $false
+if ($null -ne $RepoMigrations["prashanthkool7/Prashanth_Test-Prashanth_Test"]) {
+    gh ado2gh wait-for-migration --migration-id $RepoMigrations["prashanthkool7/Prashanth_Test-Prashanth_Test"]
+    $CanExecuteBatch = ($lastexitcode -eq 0)
+}
+if ($CanExecuteBatch) {
+    $Succeeded++
+} else {
+    $Failed++
+}
+
+# === Waiting for repo migration to finish for Team Project: satish_test and Repo: satish_test. Will then complete the below post migration steps. ===
+$CanExecuteBatch = $false
+if ($null -ne $RepoMigrations["prashanthkool7/satish_test-satish_test"]) {
+    gh ado2gh wait-for-migration --migration-id $RepoMigrations["prashanthkool7/satish_test-satish_test"]
+    $CanExecuteBatch = ($lastexitcode -eq 0)
+}
+if ($CanExecuteBatch) {
+    $Succeeded++
+} else {
+    $Failed++
+}
+
+Write-Host =============== Summary ===============
+Write-Host Total number of successful migrations: $Succeeded
+Write-Host Total number of failed migrations: $Failed
+
+if ($Failed -ne 0) {
+    exit 1
+}
+
+
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % gh ado2gh migrate-repo --ado-org "prashanthkool7" --ado-team-project "Prashanth_Test" --ado-repo "Prashanth_Test" --github-org "RocketResume-ai" --github-repo "Prashanth_Test-Prashanth_Test"
+[2025-03-29 22:12:09] [INFO] You are running an up-to-date version of the ado2gh CLI [v1.12.0]
+[2025-03-29 22:12:09] [INFO] ADO ORG: prashanthkool7
+[2025-03-29 22:12:09] [INFO] ADO TEAM PROJECT: Prashanth_Test
+[2025-03-29 22:12:09] [INFO] ADO REPO: Prashanth_Test
+[2025-03-29 22:12:09] [INFO] GITHUB ORG: RocketResume-ai
+[2025-03-29 22:12:09] [INFO] GITHUB REPO: Prashanth_Test-Prashanth_Test
+[2025-03-29 22:12:09] [INFO] Migrating Repo...
+[2025-03-29 22:12:13] [INFO] Migration in progress (ID: RM_kgDaACQ1ZjM2YThiYi0yMzY3LTQwZmMtYTNjMS03M2M2NmZlZDNlZDU). State: PENDING_VALIDATION. Waiting 10 seconds...
+[2025-03-29 22:12:24] [INFO] Migration in progress (ID: RM_kgDaACQ1ZjM2YThiYi0yMzY3LTQwZmMtYTNjMS03M2M2NmZlZDNlZDU). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:12:34] [INFO] Migration in progress (ID: RM_kgDaACQ1ZjM2YThiYi0yMzY3LTQwZmMtYTNjMS03M2M2NmZlZDNlZDU). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:12:44] [INFO] Migration in progress (ID: RM_kgDaACQ1ZjM2YThiYi0yMzY3LTQwZmMtYTNjMS03M2M2NmZlZDNlZDU). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:12:54] [INFO] Migration in progress (ID: RM_kgDaACQ1ZjM2YThiYi0yMzY3LTQwZmMtYTNjMS03M2M2NmZlZDNlZDU). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:13:05] [INFO] Migration in progress (ID: RM_kgDaACQ1ZjM2YThiYi0yMzY3LTQwZmMtYTNjMS03M2M2NmZlZDNlZDU). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:13:15] [INFO] Migration in progress (ID: RM_kgDaACQ1ZjM2YThiYi0yMzY3LTQwZmMtYTNjMS03M2M2NmZlZDNlZDU). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:13:26] [INFO] Migration in progress (ID: RM_kgDaACQ1ZjM2YThiYi0yMzY3LTQwZmMtYTNjMS03M2M2NmZlZDNlZDU). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:13:36] [INFO] Migration in progress (ID: RM_kgDaACQ1ZjM2YThiYi0yMzY3LTQwZmMtYTNjMS03M2M2NmZlZDNlZDU). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:13:46] [INFO] Migration in progress (ID: RM_kgDaACQ1ZjM2YThiYi0yMzY3LTQwZmMtYTNjMS03M2M2NmZlZDNlZDU). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:13:56] [INFO] Migration in progress (ID: RM_kgDaACQ1ZjM2YThiYi0yMzY3LTQwZmMtYTNjMS03M2M2NmZlZDNlZDU). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:14:07] [INFO] Migration in progress (ID: RM_kgDaACQ1ZjM2YThiYi0yMzY3LTQwZmMtYTNjMS03M2M2NmZlZDNlZDU). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:14:17] [INFO] Migration in progress (ID: RM_kgDaACQ1ZjM2YThiYi0yMzY3LTQwZmMtYTNjMS03M2M2NmZlZDNlZDU). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:14:27] [INFO] Migration in progress (ID: RM_kgDaACQ1ZjM2YThiYi0yMzY3LTQwZmMtYTNjMS03M2M2NmZlZDNlZDU). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:14:37] [INFO] Migration in progress (ID: RM_kgDaACQ1ZjM2YThiYi0yMzY3LTQwZmMtYTNjMS03M2M2NmZlZDNlZDU). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:14:48] [INFO] Migration in progress (ID: RM_kgDaACQ1ZjM2YThiYi0yMzY3LTQwZmMtYTNjMS03M2M2NmZlZDNlZDU). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:14:58] [INFO] Migration in progress (ID: RM_kgDaACQ1ZjM2YThiYi0yMzY3LTQwZmMtYTNjMS03M2M2NmZlZDNlZDU). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:15:08] [INFO] Migration in progress (ID: RM_kgDaACQ1ZjM2YThiYi0yMzY3LTQwZmMtYTNjMS03M2M2NmZlZDNlZDU). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:15:19] [INFO] Migration in progress (ID: RM_kgDaACQ1ZjM2YThiYi0yMzY3LTQwZmMtYTNjMS03M2M2NmZlZDNlZDU). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:15:29] [INFO] Migration in progress (ID: RM_kgDaACQ1ZjM2YThiYi0yMzY3LTQwZmMtYTNjMS03M2M2NmZlZDNlZDU). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:15:39] [INFO] Migration in progress (ID: RM_kgDaACQ1ZjM2YThiYi0yMzY3LTQwZmMtYTNjMS03M2M2NmZlZDNlZDU). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:15:50] [INFO] Migration in progress (ID: RM_kgDaACQ1ZjM2YThiYi0yMzY3LTQwZmMtYTNjMS03M2M2NmZlZDNlZDU). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:16:00] [INFO] Migration completed (ID: RM_kgDaACQ1ZjM2YThiYi0yMzY3LTQwZmMtYTNjMS03M2M2NmZlZDNlZDU)! State: SUCCEEDED
+[2025-03-29 22:16:00] [INFO] Migration log available at https://objects-origin.githubusercontent.com/octoshiftmigrationlogs/RocketResume-ai/Prashanth_Test-Prashanth_Test-5f36a8bb-2367-40fc-a3c1-73c66fed3ed5-logs.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=***%2F20250330%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250330T021556Z&X-Amz-Expires=432000&X-Amz-Signature=359ed45257224b101848584791bd8c685ffac79f076f46cdfc5c5d5fab4af3d8&X-Amz-SignedHeaders=host or by running `gh ado2gh download-logs --github-org RocketResume-ai --github-repo Prashanth_Test-Prashanth_Test`
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH %
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH %
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH %
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH %
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH %
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % cat repo_list
+#!/usr/bin/env pwsh
+
+# =========== Created with CLI version 1.12.0 ===========
+
+function Exec {
+    param (
+        [scriptblock]$ScriptBlock
+    )
+    & @ScriptBlock
+    if ($lastexitcode -ne 0) {
+        exit $lastexitcode
+    }
+}
+
+function ExecAndGetMigrationID {
+    param (
+        [scriptblock]$ScriptBlock
+    )
+    $MigrationID = & @ScriptBlock | ForEach-Object {
+        Write-Host $_
+        $_
+    } | Select-String -Pattern "\(ID: (.+)\)" | ForEach-Object { $_.matches.groups[1] }
+    return $MigrationID
+}
+
+function ExecBatch {
+    param (
+        [scriptblock[]]$ScriptBlocks
+    )
+    $Global:LastBatchFailures = 0
+    foreach ($ScriptBlock in $ScriptBlocks)
+    {
+        & @ScriptBlock
+        if ($lastexitcode -ne 0) {
+            $Global:LastBatchFailures++
+        }
+    }
+}
+
+if (-not $env:ADO_PAT) {
+    Write-Error "ADO_PAT environment variable must be set to a valid Azure DevOps Personal Access Token with the appropriate scopes. For more information see https://docs.github.com/en/migrations/using-github-enterprise-importer/preparing-to-migrate-with-github-enterprise-importer/managing-access-for-github-enterprise-importer#personal-access-tokens-for-azure-devops"
+    exit 1
+} else {
+    Write-Host "ADO_PAT environment variable is set and will be used to authenticate to Azure DevOps."
+}
+
+if (-not $env:GH_PAT) {
+    Write-Error "GH_PAT environment variable must be set to a valid GitHub Personal Access Token with the appropriate scopes. For more information see https://docs.github.com/en/migrations/using-github-enterprise-importer/preparing-to-migrate-with-github-enterprise-importer/managing-access-for-github-enterprise-importer#creating-a-personal-access-token-for-github-enterprise-importer"
+    exit 1
+} else {
+    Write-Host "GH_PAT environment variable is set and will be used to authenticate to GitHub."
+}
+
+$Succeeded = 0
+$Failed = 0
+$RepoMigrations = [ordered]@{}
+
+# =========== Queueing migration for Organization: prashanthkool7 ===========
+
+# === Queueing repo migrations for Team Project: prashanthkool7/Prashanth_Test ===
+
+$MigrationID = ExecAndGetMigrationID { gh ado2gh migrate-repo --ado-org "prashanthkool7" --ado-team-project "Prashanth_Test" --ado-repo "Prashanth_Test" --github-org "RocketResume-ai" --github-repo "Prashanth_Test-Prashanth_Test" --queue-only --target-repo-visibility private }
+$RepoMigrations["prashanthkool7/Prashanth_Test-Prashanth_Test"] = $MigrationID
+
+# === Queueing repo migrations for Team Project: prashanthkool7/satish_test ===
+
+$MigrationID = ExecAndGetMigrationID { gh ado2gh migrate-repo --ado-org "prashanthkool7" --ado-team-project "satish_test" --ado-repo "satish_test" --github-org "RocketResume-ai" --github-repo "satish_test-satish_test" --queue-only --target-repo-visibility private }
+$RepoMigrations["prashanthkool7/satish_test-satish_test"] = $MigrationID
+
+# =========== Waiting for all migrations to finish for Organization: prashanthkool7 ===========
+
+# === Waiting for repo migration to finish for Team Project: Prashanth_Test and Repo: Prashanth_Test. Will then complete the below post migration steps. ===
+$CanExecuteBatch = $false
+if ($null -ne $RepoMigrations["prashanthkool7/Prashanth_Test-Prashanth_Test"]) {
+    gh ado2gh wait-for-migration --migration-id $RepoMigrations["prashanthkool7/Prashanth_Test-Prashanth_Test"]
+    $CanExecuteBatch = ($lastexitcode -eq 0)
+}
+if ($CanExecuteBatch) {
+    $Succeeded++
+} else {
+    $Failed++
+}
+
+# === Waiting for repo migration to finish for Team Project: satish_test and Repo: satish_test. Will then complete the below post migration steps. ===
+$CanExecuteBatch = $false
+if ($null -ne $RepoMigrations["prashanthkool7/satish_test-satish_test"]) {
+    gh ado2gh wait-for-migration --migration-id $RepoMigrations["prashanthkool7/satish_test-satish_test"]
+    $CanExecuteBatch = ($lastexitcode -eq 0)
+}
+if ($CanExecuteBatch) {
+    $Succeeded++
+} else {
+    $Failed++
+}
+
+Write-Host =============== Summary ===============
+Write-Host Total number of successful migrations: $Succeeded
+Write-Host Total number of failed migrations: $Failed
+
+if ($Failed -ne 0) {
+    exit 1
+}
+
+
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % ls
+20250329215600-21014.octoshift.log		20250329220213-21124.octoshift.verbose.log
+20250329215600-21014.octoshift.verbose.log	20250329220755-21264.octoshift.log
+20250329215640-21025.octoshift.log		20250329220755-21264.octoshift.verbose.log
+20250329215640-21025.octoshift.verbose.log	20250329220939-21304.octoshift.log
+20250329215958-21085.octoshift.log		20250329220939-21304.octoshift.verbose.log
+20250329215958-21085.octoshift.verbose.log	20250329221207-21335.octoshift.log
+20250329220149-21116.octoshift.log		20250329221207-21335.octoshift.verbose.log
+20250329220149-21116.octoshift.verbose.log	repo_list
+20250329220213-21124.octoshift.log		repo_list.ps1
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % ls lart
+ls: lart: No such file or directory
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % ls -lart
+total 264
+-rw-r--r--@  1 prashanthpatnala  staff     95 Mar 29 21:56 20250329215600-21014.octoshift.log
+-rw-r--r--@  1 prashanthpatnala  staff    569 Mar 29 21:56 20250329215600-21014.octoshift.verbose.log
+-rw-r--r--@  1 prashanthpatnala  staff    359 Mar 29 21:56 20250329215640-21025.octoshift.log
+-rw-r--r--@  1 prashanthpatnala  staff   3300 Mar 29 21:56 20250329215640-21025.octoshift.verbose.log
+drwxr-xr-x+ 53 prashanthpatnala  staff   1696 Mar 29 21:58 ..
+-rw-r--r--@  1 prashanthpatnala  staff    440 Mar 29 22:01 20250329215958-21085.octoshift.log
+-rw-r--r--@  1 prashanthpatnala  staff  12074 Mar 29 22:01 20250329215958-21085.octoshift.verbose.log
+-rw-r--r--@  1 prashanthpatnala  staff    441 Mar 29 22:01 20250329220149-21116.octoshift.log
+-rw-r--r--@  1 prashanthpatnala  staff   4478 Mar 29 22:01 20250329220149-21116.octoshift.verbose.log
+-rw-r--r--@  1 prashanthpatnala  staff    435 Mar 29 22:02 20250329220213-21124.octoshift.log
+-rw-r--r--@  1 prashanthpatnala  staff   2012 Mar 29 22:02 20250329220213-21124.octoshift.verbose.log
+-rw-r--r--@  1 prashanthpatnala  staff    577 Mar 29 22:07 20250329220755-21264.octoshift.log
+-rw-r--r--@  1 prashanthpatnala  staff   3848 Mar 29 22:07 20250329220755-21264.octoshift.verbose.log
+-rw-r--r--@  1 prashanthpatnala  staff   4111 Mar 29 22:07 repo_list
+-rw-r--r--@  1 prashanthpatnala  staff    581 Mar 29 22:09 20250329220939-21304.octoshift.log
+-rw-r--r--@  1 prashanthpatnala  staff   3852 Mar 29 22:09 20250329220939-21304.octoshift.verbose.log
+-rw-r--r--@  1 prashanthpatnala  staff   4111 Mar 29 22:09 repo_list.ps1
+drwxr-xr-x@ 20 prashanthpatnala  staff    640 Mar 29 22:12 .
+-rw-r--r--@  1 prashanthpatnala  staff   4658 Mar 29 22:16 20250329221207-21335.octoshift.log
+-rw-r--r--@  1 prashanthpatnala  staff  37184 Mar 29 22:16 20250329221207-21335.octoshift.verbose.log
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % gh ado2gh migrate-repo --ado-org "prashanthkool7" --ado-team-project "satish_test" --ado-repo "satish_test" --github-org "RocketResume-ai" --github-repo "satish_test"
+[2025-03-29 22:20:19] [INFO] You are running an up-to-date version of the ado2gh CLI [v1.12.0]
+[2025-03-29 22:20:19] [INFO] ADO ORG: prashanthkool7
+[2025-03-29 22:20:19] [INFO] ADO TEAM PROJECT: satish_test
+[2025-03-29 22:20:19] [INFO] ADO REPO: satish_test
+[2025-03-29 22:20:19] [INFO] GITHUB ORG: RocketResume-ai
+[2025-03-29 22:20:19] [INFO] GITHUB REPO: satish_test
+[2025-03-29 22:20:19] [INFO] Migrating Repo...
+[2025-03-29 22:20:22] [INFO] Migration in progress (ID: RM_kgDaACQzYWI2ZDgwNy0xYjg2LTQxN2ItOTg5Yy1mNmM0MzAxYzQ4ZDE). State: PENDING_VALIDATION. Waiting 10 seconds...
+[2025-03-29 22:20:33] [INFO] Migration in progress (ID: RM_kgDaACQzYWI2ZDgwNy0xYjg2LTQxN2ItOTg5Yy1mNmM0MzAxYzQ4ZDE). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:20:43] [INFO] Migration in progress (ID: RM_kgDaACQzYWI2ZDgwNy0xYjg2LTQxN2ItOTg5Yy1mNmM0MzAxYzQ4ZDE). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:20:53] [INFO] Migration in progress (ID: RM_kgDaACQzYWI2ZDgwNy0xYjg2LTQxN2ItOTg5Yy1mNmM0MzAxYzQ4ZDE). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:21:03] [INFO] Migration in progress (ID: RM_kgDaACQzYWI2ZDgwNy0xYjg2LTQxN2ItOTg5Yy1mNmM0MzAxYzQ4ZDE). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:21:14] [INFO] Migration in progress (ID: RM_kgDaACQzYWI2ZDgwNy0xYjg2LTQxN2ItOTg5Yy1mNmM0MzAxYzQ4ZDE). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:21:24] [INFO] Migration in progress (ID: RM_kgDaACQzYWI2ZDgwNy0xYjg2LTQxN2ItOTg5Yy1mNmM0MzAxYzQ4ZDE). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:21:34] [INFO] Migration in progress (ID: RM_kgDaACQzYWI2ZDgwNy0xYjg2LTQxN2ItOTg5Yy1mNmM0MzAxYzQ4ZDE). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:21:45] [INFO] Migration in progress (ID: RM_kgDaACQzYWI2ZDgwNy0xYjg2LTQxN2ItOTg5Yy1mNmM0MzAxYzQ4ZDE). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:21:55] [INFO] Migration in progress (ID: RM_kgDaACQzYWI2ZDgwNy0xYjg2LTQxN2ItOTg5Yy1mNmM0MzAxYzQ4ZDE). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:22:06] [INFO] Migration in progress (ID: RM_kgDaACQzYWI2ZDgwNy0xYjg2LTQxN2ItOTg5Yy1mNmM0MzAxYzQ4ZDE). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:22:16] [INFO] Migration in progress (ID: RM_kgDaACQzYWI2ZDgwNy0xYjg2LTQxN2ItOTg5Yy1mNmM0MzAxYzQ4ZDE). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:22:26] [INFO] Migration in progress (ID: RM_kgDaACQzYWI2ZDgwNy0xYjg2LTQxN2ItOTg5Yy1mNmM0MzAxYzQ4ZDE). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:22:36] [INFO] Migration in progress (ID: RM_kgDaACQzYWI2ZDgwNy0xYjg2LTQxN2ItOTg5Yy1mNmM0MzAxYzQ4ZDE). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:22:47] [INFO] Migration in progress (ID: RM_kgDaACQzYWI2ZDgwNy0xYjg2LTQxN2ItOTg5Yy1mNmM0MzAxYzQ4ZDE). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:22:57] [INFO] Migration in progress (ID: RM_kgDaACQzYWI2ZDgwNy0xYjg2LTQxN2ItOTg5Yy1mNmM0MzAxYzQ4ZDE). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:23:07] [INFO] Migration in progress (ID: RM_kgDaACQzYWI2ZDgwNy0xYjg2LTQxN2ItOTg5Yy1mNmM0MzAxYzQ4ZDE). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:23:17] [INFO] Migration in progress (ID: RM_kgDaACQzYWI2ZDgwNy0xYjg2LTQxN2ItOTg5Yy1mNmM0MzAxYzQ4ZDE). State: IN_PROGRESS. Waiting 10 seconds...
+[2025-03-29 22:23:28] [INFO] Migration completed (ID: RM_kgDaACQzYWI2ZDgwNy0xYjg2LTQxN2ItOTg5Yy1mNmM0MzAxYzQ4ZDE)! State: SUCCEEDED
+[2025-03-29 22:23:28] [INFO] Migration log available at  or by running `gh ado2gh download-logs --github-org RocketResume-ai --github-repo satish_test`
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % gh ado2gh download-logs --github-org RocketResume-ai --github-repo satish_test`
+bquote>
+prashanthpatnala@Prashanths-MacBook-Pro AZDO2GH % gh ado2gh download-logs --github-org RocketResume-ai --github-repo satish_test
+[2025-03-29 22:24:47] [INFO] You are running an up-to-date version of the ado2gh CLI [v1.12.0]
+[2025-03-29 22:24:47] [INFO] GITHUB ORG: RocketResume-ai
+[2025-03-29 22:24:47] [INFO] GITHUB REPO: satish_test
+[2025-03-29 22:24:47] [WARNING] Migration logs are only available for 24 hours after a migration finishes!
+[2025-03-29 22:24:47] [INFO] Downloading migration logs...
+[2025-03-29 22:24:47] [INFO] Downloading log for repository satish_test to migration-log-RocketResume-ai-satish_test-RM_kgDaACQzYWI2ZDgwNy0xYjg2LTQxN2ItOTg5Yy1mNmM0MzAxYzQ4ZDE.log...
+[2025-03-29 22:24:48] [INFO] Downloaded satish_test log to migration-log-RocketResume-ai-satish_test-RM_kgDaACQzYWI2ZDgwNy0xYjg2LTQxN2ItOTg5Yy1mNmM0MzAxYzQ4ZDE.log.
